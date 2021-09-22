@@ -590,6 +590,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   speed: 10
   hp: 10
+  hammer: {fileID: 1319867764}
 --- !u!54 &823737905
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1169,6 +1170,7 @@ MonoBehaviour:
   targets: []
   duration: 3
   spinSpeed: 200
+  running: 0
 --- !u!4 &1319867768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 737e3ba27131363409048fb051624fcc, type: 3}
@@ -1286,6 +1288,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   speed: 10
   hp: 10
+  hammer: {fileID: 0}
 --- !u!54 &1352168859
 Rigidbody:
   m_ObjectHideFlags: 0

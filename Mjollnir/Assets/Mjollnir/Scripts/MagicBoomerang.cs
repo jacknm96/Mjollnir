@@ -12,7 +12,8 @@ public class MagicBoomerang : MonoBehaviour
     Coroutine throwCoroutine;
     RaycastHit hit;
     Ray ray;
-    
+    public bool running = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class MagicBoomerang : MonoBehaviour
             {
                 if (hit.collider.gameObject.GetComponent<EnemyBase>() && !targets.Contains(hit.collider.gameObject.GetComponent<EnemyBase>()))
                 {
+                    Debug.Log("Enemy Found");
                     targets.Add(hit.collider.gameObject.GetComponent<EnemyBase>());
                 }
             }
@@ -44,12 +46,14 @@ public class MagicBoomerang : MonoBehaviour
         }
         if (targets.Count > 0)
         {
+            Debug.Log("Throwing Hammer");
             StartCoroutine(ChainFly());
         }
     }
 
     IEnumerator ChainFly()
     {
+        running = true;
         Vector3 startPos = transform.position;
         float startTime = Time.time;
         for (int i = 0; i < targets.Count; i++)
@@ -73,6 +77,7 @@ public class MagicBoomerang : MonoBehaviour
             yield return null;
         }
         targets.Clear();
+        running = false;
     }
 
     void ThrowBoomerang(Vector3 whereToGo)
@@ -88,6 +93,7 @@ public class MagicBoomerang : MonoBehaviour
 
     IEnumerator Fly(Vector3 whereToGo)
     {
+        running = true;
         Vector3 startPos = transform.position;
         float startTime = Time.time;
         transform.LookAt(whereToGo);
@@ -104,10 +110,12 @@ public class MagicBoomerang : MonoBehaviour
             transform.position = Vector3.Lerp(whereToGo, thrower.transform.position, (Time.time - startTime) / duration);
             yield return null;
         }
+        running = false;
     }
 
     IEnumerator Fly(Transform target)
     {
+        running = true;
         Vector3 startPos = transform.position;
         float startTime = Time.time;
         transform.LookAt(target.position);
@@ -124,5 +132,6 @@ public class MagicBoomerang : MonoBehaviour
             transform.position = Vector3.Lerp(target.position, thrower.transform.position, (Time.time - startTime) / duration);
             yield return null;
         }
+        running = false;
     }
 }
