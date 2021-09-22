@@ -58,6 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Mjollnir\Scripts\MagicBoomerang.cs" />
     <Compile Include="Assets\Hud\Stamina.cs" />
+    <Compile Include="Assets\Mjollnir\Scripts\MovementBase.cs" />
+    <Compile Include="Assets\Mjollnir\Scripts\Player.cs" />
+    <Compile Include="Assets\Mjollnir\Scripts\EnemyBase.cs" />
+    <Compile Include="Assets\Mjollnir\Scripts\SwordEnemy.cs" />
+    <Compile Include="Assets\Mjollnir\Scripts\BowEnemy.cs" />
+    <Compile Include="Assets\Mjollnir\Scripts\CameraController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

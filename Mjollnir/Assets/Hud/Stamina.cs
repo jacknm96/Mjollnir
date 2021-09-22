@@ -7,8 +7,17 @@ using UnityEngine.UI;
 public class Stamina : MonoBehaviour
 {
     static public Slider slider;
-    float currentStamina = 3f;
+    public static float currentStamina = 1000f;
     float maxStamina = 1000f;
+    public static bool infStamina = false;
+
+    public static void ReduceStamina()
+    {
+        if (!infStamina)
+        {
+            Stamina.currentStamina -= 10 * Time.deltaTime;
+        }
+    }
     
     // Start is called before the first frame update
     void Start()
