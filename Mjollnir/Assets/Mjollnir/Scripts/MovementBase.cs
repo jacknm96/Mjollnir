@@ -14,10 +14,7 @@ public abstract class MovementBase : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    private void OnMove()
-    {
-
-    }
+    protected abstract void OnMove();
 
     protected float DistanceFromPoints(Vector3 a, Vector3 b)
     {

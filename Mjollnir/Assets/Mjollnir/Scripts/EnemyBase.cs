@@ -27,4 +27,9 @@ public class EnemyBase : MovementBase
             this.gameObject.SetActive(false);
         }
     }
+
+    protected override void OnMove()
+    {
+
+    }
 }
