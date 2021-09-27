@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Mjollnir/HammerTitleScene.unity
+- path: Assets/Scenes/lightning.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
