@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/lightning.unity
+- path: Assets/Scenes/hold.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Lightning\Bolt.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\MagicBoomerang.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\Player.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\BowEnemy.cs" />
@@ -64,7 +65,7 @@
     <Compile Include="Assets\Mjollnir\Scripts\SwordEnemy.cs" />
     <Compile Include="Assets\Hud\Stamina.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\EnemyBase.cs" />
-    <Compile Include="Assets\Lightning\Bolt.cs" />
+    <Compile Include="Assets\Lightning\FunWithColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
