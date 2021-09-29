@@ -8,11 +8,6 @@ public class BowEnemy : EnemyBase
 
     private void FixedUpdate()
     {
-        if (hammer.running)
-        {
-            rb.velocity += transform.right * speed * Time.fixedDeltaTime;
-        }
-
         if (Vector3.Distance(transform.position, player.transform.position) > 30)
         {
             rb.velocity += (player.transform.position - transform.position).normalized * speed * Time.fixedDeltaTime;
@@ -23,6 +18,11 @@ public class BowEnemy : EnemyBase
         else
         {
             rb.velocity = Vector3.zero;
+        }
+        if (hammer.running)
+        {
+            Debug.Log("Dodging");
+            rb.velocity += transform.right * speed * Time.deltaTime;
         }
     }
 }

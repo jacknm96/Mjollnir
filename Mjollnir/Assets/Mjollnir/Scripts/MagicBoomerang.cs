@@ -162,6 +162,9 @@ public class MagicBoomerang : MonoBehaviour
             StopCoroutine(throwCoroutine);
             transform.position = player.transform.position + new Vector3(.62f, .73756f, -8.81f);
             transform.rotation = baseRotation;
+        } else if (other.GetComponent<EnemyBase>())
+        {
+            other.GetComponent<EnemyBase>().TakeDamage(2);
         }
     }
 }

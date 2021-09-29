@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyBase : MovementBase
 {
-   protected GameObject player;
+    protected GameObject player;
     [SerializeField] int hp;
 
     void Start()
@@ -19,7 +19,7 @@ public class EnemyBase : MovementBase
         
     }
 
-    void TakeDamage(int dam)
+    public void TakeDamage(int dam)
     {
         hp -= dam;
         if (hp < 0)

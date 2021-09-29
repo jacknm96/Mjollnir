@@ -25,6 +25,6 @@ public class CameraController : MonoBehaviour
         
         transform.eulerAngles = new Vector3(transform.localEulerAngles.x + pitch,
             transform.localEulerAngles.y + yaw, transform.localEulerAngles.z);
-        transform.position = player.position - transform.forward * cameraOffset;
+        transform.position = player.position - transform.forward * cameraOffset + transform.up + transform.right;
     }
 }
