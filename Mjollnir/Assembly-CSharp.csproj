@@ -63,11 +63,14 @@
     <Compile Include="Assets\Mjollnir\Scripts\MovementBase.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\CameraController.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\SwordEnemy.cs" />
+    <Compile Include="Assets\Lightning\FunWithColor.cs" />
     <Compile Include="Assets\Hud\Stamina.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\EnemyBase.cs" />
-    <Compile Include="Assets\Lightning\FunWithColor.cs" />
+    <Compile Include="Assets\Movement\PlayerMovement2D.cs" />
+    <Compile Include="Assets\Movement\GroundCheck.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Character\License.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -634,6 +637,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
