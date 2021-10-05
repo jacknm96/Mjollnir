@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Enemy : MonoBehaviour
     public SpriteRenderer rend;
     [SerializeField] float speed = 3f;
     [SerializeField] PlayerMovement2D player;
+    [SerializeField] UnityEvent pickUpEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +43,7 @@ public class Enemy : MonoBehaviour
         {
             Debug.Log(collision.gameObject.name);
             Debug.Log(collision.gameObject.name);
+            pickUpEvent.Invoke();
             player.Respawn();
         }
     }
