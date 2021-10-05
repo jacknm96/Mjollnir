@@ -7,10 +7,11 @@ public class PlayerMovement2D : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float speed = 200;
     Vector2 direction;
-    float jumpForce = 6f;
+    float jumpForce = 8f;
     [SerializeField] GroundCheck checker;
     Animator anim;
     SpriteRenderer rend;
+    [SerializeField] SpawnZone spawn;
 
     // Start is called before the first frame update
     void Start()
@@ -58,5 +59,12 @@ public class PlayerMovement2D : MonoBehaviour
             anim.SetTrigger("jumping");
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
         }
+    }
+
+    [ContextMenu("Respawn")]
+    public void Respawn()
+    {
+        transform.position = spawn.transform.position;
+        Display.Restart();
     }
 }
