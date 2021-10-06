@@ -2118,6 +2118,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292897, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5712893383624292901, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 0
@@ -2154,6 +2166,10 @@ PrefabInstance:
       propertyPath: pickUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292903, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1288486475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
 --- !u!224 &1108940020 stripped
@@ -3692,6 +3708,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292897, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5712893383624292901, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 0
@@ -3728,6 +3756,10 @@ PrefabInstance:
       propertyPath: pickUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292903, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1288486475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
 --- !u!224 &1691807012 stripped
@@ -3846,6 +3878,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292897, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5712893383624292901, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 0
@@ -3882,6 +3926,10 @@ PrefabInstance:
       propertyPath: pickUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292903, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1288486475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
 --- !u!224 &1747448414 stripped
@@ -4946,6 +4994,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292900, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5712893383624292901, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
       propertyPath: m_CullTransparentMesh
       value: 0
@@ -4982,6 +5038,10 @@ PrefabInstance:
       propertyPath: pickUpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5712893383624292903, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1288486475}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46a77bc765aa1e45bac7eaee5829af3, type: 3}
 --- !u!224 &5712893384093091804 stripped

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8899108006845356536}
   - component: {fileID: 8899108006845356538}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: FrontSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 8899108007571873521}
   - component: {fileID: 8899108007571873520}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: BackSensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,6 +233,9 @@ MonoBehaviour:
   rend: {fileID: 8899108007572913492}
   speed: 3
   player: {fileID: 0}
+  pickUpEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!70 &8899108007572913494
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

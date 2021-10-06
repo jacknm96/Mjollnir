@@ -9,6 +9,7 @@ public class Display : MonoBehaviour
     static public TMP_Text instance;
     [SerializeField] TMP_Text itemDisplay;
     public static List<Collectables> coins = new List<Collectables>();
+    public static List<Enemy> enemies = new List<Enemy>();
 
     private void Start()
     {
@@ -20,9 +21,13 @@ public class Display : MonoBehaviour
     {
         foreach (Collectables coin in coins)
         {
-            coin.gameObject.SetActive(true);
+            coin.ReActivate();
             Collectables.collectablesCollected = 0;
             UpdateDisplay();
+        }
+        foreach (Enemy enemy in enemies)
+        {
+            enemy.Restart();
         }
     }
 

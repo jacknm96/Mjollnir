@@ -37,7 +37,7 @@ public class BackgroundMusic : MonoBehaviour
         float startTime = Time.time;
         while (Time.time - startTime < 10)
         {
-            audioSource.volume = Mathf.Lerp(7, 0, Time.deltaTime);
+            audioSource.volume = Mathf.Lerp(0.8f, 0f, 10 * Time.deltaTime);
             yield return null;
         }
         StartCoroutine(ClipOne());

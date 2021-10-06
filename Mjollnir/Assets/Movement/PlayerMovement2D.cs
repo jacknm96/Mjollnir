@@ -12,6 +12,7 @@ public class PlayerMovement2D : MonoBehaviour
     Animator anim;
     SpriteRenderer rend;
     [SerializeField] SpawnZone spawn;
+    bool won;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,11 @@ public class PlayerMovement2D : MonoBehaviour
         }
     }
 
+    public void Winning()
+    {
+        won = true;
+    }
+
     private void FixedUpdate()
     {
         Move();
@@ -64,7 +70,10 @@ public class PlayerMovement2D : MonoBehaviour
     [ContextMenu("Respawn")]
     public void Respawn()
     {
-        transform.position = spawn.transform.position;
-        Display.Restart();
+        if (!won) 
+        {
+            transform.position = spawn.transform.position;
+            Display.Restart();
+        }
     }
 }
