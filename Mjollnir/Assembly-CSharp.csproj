@@ -72,11 +72,13 @@
     <Compile Include="Assets\Movement\PlayerMovement2D.cs" />
     <Compile Include="Assets\Movement\Enemy.cs" />
     <Compile Include="Assets\Mjollnir\Scripts\EnemyBase.cs" />
+    <Compile Include="Assets\Audio\BackgroundMusic.cs" />
     <Compile Include="Assets\Movement\EnemyGroundChecker.cs" />
     <Compile Include="Assets\Movement\GroundCheck.cs" />
     <Compile Include="Assets\Movement\Collectables.cs" />
     <Compile Include="Assets\Audio\ActivateSound.cs" />
-    <Compile Include="Assets\Audio\BackgroundMusic.cs" />
+    <Compile Include="Assets\Curves\CurveReference.cs" />
+    <Compile Include="Assets\Curves\WavyBullet.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
